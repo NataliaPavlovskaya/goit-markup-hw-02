@@ -1,6 +1,4 @@
-.body {
-background-color: brown;
-}
-.sect{
-    background-color: chartreuse;
+
+.site-nav li a :focus{
+    color: cornflowerblue;
 }
