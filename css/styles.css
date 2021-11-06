@@ -1,4 +1,66 @@
-
-.site-nav li a :focus{
-    color: cornflowerblue;
+body{
+    background-color: white;
+    color: #757575;
 }
+.logo{
+    color: #2196F3;
+    text-decoration: none;
+}
+.logo span{
+    color:#000000;
+}
+.logo-footer{
+    color: #2196F3;
+    text-decoration: none;
+}
+.logo-footer span{
+    color:#ffffff;
+}
+ul{
+    list-style: none; 
+}
+/* site-nav */
+.site-nav a {
+    color: #212121;
+    text-decoration: none; 
+}
+.auth-nav a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.auth-nav a:hover {
+    color: #2196F3;
+}
+.site-nav a:focus,
+.auth-nav a:focus {
+    color: #2196F3;
+}
+.section-tittle{
+    color: #212121;
+}
+
+
+
+h3{
+    color: #212121;
+}
+.section-hero-tittle{
+    color: #ffffff;
+   
+}
+.section-hero{
+    background-color: #2F303A;
+}
+
+
+
+/*цвет текста 000000 лого*/
+/*цвет текста 212121 осн*/
+/*цвет текста 757575 осн*/
+/*цвет текста 2196F3*/
+/*цвет текста FFFFFF*/
+/*цвет герой 2F303A*/
+/* футер 000000*/
+/* кнопки второй страници , вторичный F5F4FA */
