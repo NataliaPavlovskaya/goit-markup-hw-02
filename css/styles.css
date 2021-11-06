@@ -1,66 +1,94 @@
+:root{
+    --primary-text-color: #757575;
+    --tittle-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color:#ffffff;
+}
+
+
+
+
 body{
-    background-color: white;
-    color: #757575;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
 }
 .logo{
-    color: #2196F3;
+    color: var(--accent-color);
     text-decoration: none;
 }
 .logo span{
     color:#000000;
 }
 .logo-footer{
-    color: #2196F3;
+    color: var(--accent-color);
     text-decoration: none;
 }
 .logo-footer span{
-    color:#ffffff;
+    color:var(--primary-white-color);
 }
 ul{
     list-style: none; 
 }
 /* site-nav */
 .site-nav a {
-    color: #212121;
+    color: var(--tittle-text-color);
     text-decoration: none; 
 }
 .auth-nav a {
-    color: #757575;
+    color: var(--primary-text-color);
     text-decoration: none;
+}
+.site-nav .link-current{
+    color: var(--accent-color);
 }
 
 .site-nav a:hover,
 .auth-nav a:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .site-nav a:focus,
 .auth-nav a:focus {
-    color: #2196F3;
+    color:var(--accent-color);
 }
 .section-tittle{
-    color: #212121;
+    color: var();
 }
-
-
-
 h3{
-    color: #212121;
+    color: var(--tittle-text-color);
 }
-.section-hero-tittle{
-    color: #ffffff;
+.hero-tittle{
+    color: var(--primary-white-color);
    
 }
-.section-hero{
+.hero{
     background-color: #2F303A;
 }
+.address-list{
+    color: var(--primary-white-color);
+}
+.address{
+    background-color: #000000;
+}
+.address .contact{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.address .contact:hover,
+.address .contact:focus {
+    color: var(--accent-color);
+}
+.portfolio {
 
-
-
-/*цвет текста 000000 лого*/
-/*цвет текста 212121 осн*/
-/*цвет текста 757575 осн*/
-/*цвет текста 2196F3*/
-/*цвет текста FFFFFF*/
-/*цвет герой 2F303A*/
-/* футер 000000*/
-/* кнопки второй страници , вторичный F5F4FA */
+}
+.button-link{
+    color: var(--tittle-text-color);
+    background-color: #F5F4FA;
+}
+.button-link:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+.button-primary{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
