@@ -180,6 +180,7 @@ ul{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    cursor:pointer
 }
 .button-link:hover{
     background-color: var(--accent-color);
@@ -194,6 +195,7 @@ ul{
     font-weight: bold;
     font-size: 16px;
     line-height: 1.8;
+    cursor:pointer
 }
 .button-link-current{
     background-color: var(--accent-color);
