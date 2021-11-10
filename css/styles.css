@@ -3,6 +3,10 @@
     --tittle-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color:#ffffff;
+    --logo-color:#000000;
+    --background-hero-color:#2F303A;
+    --section-command-color:#F5F4FA;
+    --address-contact-color:rgba(255, 255, 255, 0.6);
 }
 
 
@@ -14,9 +18,7 @@ body{
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-ul{
-    list-style: none; 
-}
+
 /* logo */
 
 .logo{
@@ -28,12 +30,14 @@ ul{
     line-height: 1.19;
 }
 .logo span{
-    color:#000000;
+    color: var(--logo-color);
     font-family: Raleway, cursive;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
 }
+
+
 .logo-footer{
     color: var(--accent-color);
     text-decoration: none;
@@ -52,21 +56,30 @@ ul{
 
 /* site-nav,auth-nav */
 
-.site-nav a {
+.site-nav,
+.auth-nav{
+    list-style: none;
+}
+
+.link,
+.link-current {
     color: var(--tittle-text-color);
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    
+   
 }
-.auth-nav a {
+.auth-nav a{
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    
 }
 .site-nav .link-current{
     color: var(--accent-color);
@@ -75,12 +88,12 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;; 
 }
-.site-nav a:hover,
-.auth-nav a:hover {
+.site-nav :hover,
+.auth-nav :hover {
     color: var(--accent-color);
 }
-.site-nav a:focus,
-.auth-nav a:focus {
+.site-nav :focus,
+.auth-nav :focus {
     color:var(--accent-color);
 }
 
@@ -92,22 +105,32 @@ ul{
     line-height: 1.16;
     text-align: center;
 }
+.persons {
+    list-style: none;
+}
 .persons-list {
     color: var(--tittle-text-color);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
-.text{
+.job-list {
+    list-style: none;
+}
+.text {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 }
-.section-command{
-    background: #F5F4FA;
+.section-command {
+    background: var(--section-command-color);
 }
-.name{
+.command-list{
+    list-style: none;
+}
+.name {
     color: var(--tittle-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -118,6 +141,9 @@ ul{
     font-size: 16px;
     line-height: 1.8;
     text-align: center;
+}
+.project {
+    list-style: none;
 }
 .project-tittle{
     color: var(--tittle-text-color);
@@ -152,9 +178,10 @@ ul{
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
+    text-transform: uppercase;
 }
 .hero{
-    background-color: #2F303A;
+    background-color: var(--background-hero-color);
 }
 
 /* footer */
@@ -164,13 +191,14 @@ ul{
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
+    list-style: none;
     
 }
 .address{
-    background-color: #000000;
+    background-color: var(--background-hero-color);
 }
 .address .contact{
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-contact-color);
     text-decoration: none;
 }
 .address .contact:hover,
@@ -179,20 +207,29 @@ ul{
 }
 
 /* button */
+.button {
+    list-style: none;
+}
 .button-link{
     color: var(--tittle-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--section-command-color);
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    cursor:pointer
+    cursor:pointer;
 }
-.button-link:hover{
+.button-link-current,
+.button-link:hover,
+.button-link:focus{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 .button-primary{
     background-color: var(--accent-color);
@@ -202,14 +239,17 @@ ul{
     font-weight: bold;
     font-size: 16px;
     line-height: 1.8;
-    cursor:pointer
+    cursor:pointer;
+    border: 0;
+    border-radius: 4px;
+    
 }
-.button-link-current{
+/* .button-link-current {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
-}
+    line-height: 1.6; */
+    
