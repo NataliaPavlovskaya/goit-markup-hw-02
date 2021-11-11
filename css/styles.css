@@ -29,16 +29,14 @@ body{
     font-size: 26px;
     line-height: 1.19;
 }
-.logo span{
+.two-part {
     color: var(--logo-color);
     font-family: Raleway, cursive;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
 }
-
-
-.logo-footer{
+.logo-footer {
     color: var(--accent-color);
     text-decoration: none;
     font-family: Raleway, cursive;
@@ -46,14 +44,16 @@ body{
     font-size: 26px;
     line-height: 1.19;
 }
-.logo-footer span{
+.logo-part{
+    color: var(--primary-white-color);
+}
+.studio {
     color:var(--primary-white-color);
     font-family: Raleway, cursive;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
 }
-
 /* site-nav,auth-nav */
 
 .site-nav,
@@ -72,14 +72,13 @@ body{
     
    
 }
-.auth-nav a{
+.info {
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
 }
 .site-nav .link-current{
     color: var(--accent-color);
