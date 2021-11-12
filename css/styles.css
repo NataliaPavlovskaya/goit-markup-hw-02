@@ -19,142 +19,12 @@ body{
     letter-spacing: 0.03em;
 }
 
-/* logo */
-
-.logo{
-    color: var(--accent-color);
-    text-decoration: none;
-    font-family: Raleway, cursive;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-}
-.two-part {
-    color: var(--logo-color);
-    font-family: Raleway, cursive;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-}
-.logo-footer {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-family: Raleway, cursive;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-}
-.logo-part{
-    color: var(--primary-white-color);
-}
-.studio {
-    color:var(--primary-white-color);
-    font-family: Raleway, cursive;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-}
-/* site-nav,auth-nav */
-
-.site-nav,
-.auth-nav{
-    list-style: none;
-}
-
-.link,
-.link-current {
-    color: var(--tittle-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    
-   
-}
-.info {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-.site-nav .link-current{
-    color: var(--accent-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;; 
-}
-.site-nav :hover,
-.auth-nav :hover {
-    color: var(--accent-color);
-}
-.site-nav :focus,
-.auth-nav :focus {
-    color:var(--accent-color);
-}
-
-/* main */
 .section-tittle{
     color: var(--tittle-text-color);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-}
-.persons {
-    list-style: none;
-}
-.persons-list {
-    color: var(--tittle-text-color);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-}
-.job-list {
-    list-style: none;
-}
-.text {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-}
-.section-command {
-    background: var(--section-command-color);
-}
-.command-list{
-    list-style: none;
-}
-.name {
-    color: var(--tittle-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.8;
-    text-align: center;
-}
-.special{
-    font-size: 16px;
-    line-height: 1.8;
-    text-align: center;
-}
-.project {
-    list-style: none;
-}
-.project-tittle{
-    color: var(--tittle-text-color);
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-.project .text{
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.87;
 }
 .visually-hidden {
     position: absolute;
@@ -169,10 +39,70 @@ body{
     overflow: hidden;
 }
 
-/* hero */
+/* -----------------HEADER----------------- */
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+/* logo */
+.header-logo{
+    color: var(--accent-color);
+
+    text-decoration: none;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.header-logo-two {
+    color: var(--logo-color);
+    
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+/* nav */
+.header-link,
+.header-link-current {
+    color: var(--tittle-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+}
+.header-auth-nav-info {
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-list .link-current{
+    color: var(--accent-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;; 
+}
+.header-list :hover,
+.header-auth-nav :hover {
+    color: var(--accent-color);
+}
+.header-list :focus,
+.header-auth-nav :focus {
+    color:var(--accent-color);
+}
+
+/* -----------------HERO----------------- */
 .hero-tittle{
     color: var(--primary-white-color);
-    font-style: normal;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -182,28 +112,110 @@ body{
 .hero{
     background-color: var(--background-hero-color);
 }
+.button-primary{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+    cursor:pointer;
+    border: 0;
+    border-radius: 4px;
+}
 
-/* footer */
+/* -----------------PERSONS----------------- */
+
+.persons-tittle {
+    color: var(--tittle-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.persons-text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* -----------------WORK----------------- */
+
+/* -----------------COMMAND----------------- */
+
+.section-command {
+    background: var(--section-command-color);
+}
+.command-people {
+    color: var(--tittle-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+.command-special{
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* -----------------PORTFOLIO----------------- */
+/* -----------------PROJECT----------------- */
+
+.project-tittle{
+    color: var(--tittle-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+}
+/* -----------------FOOTER----------------- */
+.footer {
+    background-color: var(--background-hero-color);
+}
+.logo-footer {
+    color: var(--accent-color);
+
+    text-decoration: none;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-footer-two {
+    color:var(--primary-white-color);
+
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
 .address-list{
     color: var(--primary-white-color);
-    font-style: normal;
+
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
-    list-style: none;
-    
+    font-style: initial;
 }
-.address{
-    background-color: var(--background-hero-color);
-}
-.address .contact{
+.address-item-contact{
     color: var(--address-contact-color);
+
     text-decoration: none;
 }
-.address .contact:hover,
-.address .contact:focus {
+.address-item-contact:hover,
+.address-item-contact:focus {
     color: var(--accent-color);
 }
+
 
 /* button */
 .button {
@@ -230,19 +242,8 @@ body{
     font-size: 16px;
     line-height: 1.6;
 }
-.button-primary{
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-    font-family: inherit;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.8;
-    cursor:pointer;
-    border: 0;
-    border-radius: 4px;
+
     
-}
 /* .button-link-current {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
@@ -251,4 +252,6 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6; */
+    
+    
     
